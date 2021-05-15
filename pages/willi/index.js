@@ -1,8 +1,17 @@
+import Head from "next/head";
+import { Fragment } from "react";
+
 const Willi = () => {
   return (
-    <div>
-      <h1>This is the subpages gate</h1>
-    </div>
+    <Fragment>
+      <Head>
+        <title>Willi's List</title>
+        <meta name="subpage gate metadata" content="Subpage gate content" />
+      </Head>
+      <div>
+        <h1>This is the subpages gate</h1>
+      </div>
+    </Fragment>
   );
 };
 
