@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import styles from "../styles/Home.module.css";
@@ -14,6 +15,7 @@ export default function Home() {
           cum vero esse eveniet porro tempore, cumque nobis culpa iste?
         </p>
       </div>
+      <Link href="/subpages/lists">Check other pages lists</Link>
       <Footer />
     </div>
   );
