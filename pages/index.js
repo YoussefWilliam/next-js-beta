@@ -1,12 +1,8 @@
 import Link from "next/link";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
     <div>
-      <Navbar />
       <div >
         <h1>My homepage</h1>
         <p>
@@ -16,7 +12,6 @@ export default function Home() {
         </p>
       </div>
       <Link href="/subpages/lists">Check other pages lists</Link>
-      <Footer />
     </div>
   );
 }
