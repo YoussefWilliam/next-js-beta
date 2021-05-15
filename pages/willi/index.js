@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Fragment } from "react";
 import styles from "../../styles/Willi.module.css";
+import Link from "next/link";
 
 export const getStaticProps = async () => {
   const result = await fetch("https://jsonplaceholder.typicode.com/users");
@@ -21,11 +22,11 @@ const Willi = ({ willis }) => {
       <div>
         <h1>All Willi's friends</h1>
         {willis.map((willi) => (
-          <div key={willi.id}>
+          <Link key={willi.id} href={`/willi/${willi.id}`}>
             <a className={styles.name}>
               <h4>{willi.name}</h4>
             </a>
-          </div>
+          </Link>
         ))}
       </div>
     </Fragment>
