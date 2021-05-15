@@ -1,8 +1,6 @@
-import styles from "../../styles/Home.module.css";
-
 const Lists = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <h1>Lists page</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ex

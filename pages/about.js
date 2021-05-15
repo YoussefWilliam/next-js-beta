@@ -1,8 +1,6 @@
-import styles from "../styles/Home.module.css";
-
 const About = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <h1>About page</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat illo
