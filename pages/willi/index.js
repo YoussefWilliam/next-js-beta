@@ -1,4 +1,4 @@
-const Subpages = () => {
+const Willi = () => {
   return (
     <div>
       <h1>This is the subpages gate</h1>
@@ -6,4 +6,4 @@ const Subpages = () => {
   );
 };
 
-export default Subpages;
+export default Willi;
