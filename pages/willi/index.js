@@ -1,7 +1,17 @@
 import Head from "next/head";
 import { Fragment } from "react";
+import styles from "../../styles/Willi.module.css";
 
-const Willi = () => {
+export const getStaticProps = async () => {
+  const result = await fetch("https://jsonplaceholder.typicode.com/users");
+  const data = await result.json();
+
+  return {
+    props: { willis: data },
+  };
+};
+
+const Willi = ({ willis }) => {
   return (
     <Fragment>
       <Head>
@@ -9,7 +19,14 @@ const Willi = () => {
         <meta name="subpage gate metadata" content="Subpage gate content" />
       </Head>
       <div>
-        <h1>This is the subpages gate</h1>
+        <h1>All Willi's friends</h1>
+        {willis.map((willi) => (
+          <div key={willi.id}>
+            <a className={styles.name}>
+              <h4>{willi.name}</h4>
+            </a>
+          </div>
+        ))}
       </div>
     </Fragment>
   );
