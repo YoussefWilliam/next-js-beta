@@ -25,7 +25,7 @@ const ERROR_PAGE = () => {
       <h1>Ooooopppsss....🚨 </h1>
       <h1>This page can not be found</h1>
       <h2>
-        Wait {counter} secound(s) and you will be redirected back to Home Page
+        Wait {counter} second(s) and you will be redirected back to Home Page
       </h2>
       <h1> OR 🙇‍♀️</h1>
       <p>Go back to the Home page</p>
