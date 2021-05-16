@@ -24,7 +24,7 @@ export default function Home() {
             eius, cum vero esse eveniet porro tempore, cumque nobis culpa iste?
           </p>
         </div>
-        <Link href="/willi/lists">
+        <Link href="/willi">
           <a className={styles.btn}> See Willi's lists 📚 </a>
         </Link>
       </div>
